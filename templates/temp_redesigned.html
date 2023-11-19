@@ -1,0 +1,29 @@
+
+{%extends "global_redesigned.html"%} 
+
+<!-- {% block temp_redesigned.css %}
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/temp_redesigned.css"
+    />
+{% endblock %}     -->
+    {% block content %}
+  <div class="main_content">
+    <form
+    method="post" enctype="multipart/form-data" action="image_predict"
+    >
+    {% csrf_token %}
+      <div class="pure">
+        <p>upload youre image here</p>
+        <div class="main">
+          <input type="file" / class="input_sect" name="img_path">
+          <button name="img_path""> submit </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  {% endblock %}   
+ 
+ 
+   

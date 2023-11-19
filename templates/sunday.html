@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:wght@200&family=Playfair+Display:wght@400;500&family=Poppins:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Josefin Sans', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; -->
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    body {
+      padding: 5px;
+      background-color: rgb(239, 230, 232);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: inherit;
+      padding: 20px;
+    }
+    ul li {
+      display: inline-block;
+      margin: 25px;
+    }
+    ul li a {
+      font-size: 25px;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+    ul li:nth-child(4) {
+    }
+    ul li:nth-child(4):hover {
+      border: 1px solid black;
+      transform: scale(1.1, 2);
+      border-radius: 10%;
+      background-color: white;
+    }
+    .logo {
+      font-size: 80px;
+    }
+    .main_content {
+      padding: 50px;
+    }
+    .paragraph {
+      /* background-color: azure; */
+      display: inline-block;
+      width: fit-content;
+      text-align: center;
+      transform: translate(-15px);
+    }
+    .paragraph p {
+      font-family: "Roboto", sans-serif;
+      font-size: 45px;
+    }
+    .profile_photo {
+      /* background-color: blueviolet; */
+      width: fit-content;
+      position: absolute;
+      left: 1000px;
+      top: 150px;
+    }
+    .profile_photo img {
+      width: 400px;
+      border-radius: 10%;
+    }
+    .profile_photo img:hover {
+      transform: scale(1, 1.1);
+    }
+    .paragraph .two-button button {
+      width: 150px;
+      height: 50px;
+      margin: 25px;
+      font-size: 25px;
+      background-color: blueviolet;
+      border-radius: 25%;
+      border: none;
+    }
+    .paragraph .two-button button:first-child {
+      background-color: rgb(223, 101, 88);
+    }
+    .paragraph .two-button button:first-child:hover {
+      transform: scale(2px, 5px);
+    }
+
+    .two-button {
+      padding: 20px;
+    }
+    .wrapper {
+      padding: 10px;
+      border: 2px solid blueviolet;
+      height: 710px;
+      border-radius: 20px;
+    }
+    nav span {
+      color: blueviolet;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <nav>
+          <div class="logo">deve<span>loper</span></div>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">subcsribe</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main_content">
+        <div class="paragraph">
+          <p>
+            my name is duen michael chombo. <br />iam a a software developer
+            based in tanzania,<br />i am currently practicing my html and css
+            skills,<br />
+            youre welcome
+          </p>
+          <div class="two-button">
+            <button>login</button>
+            <button>signup</button>
+          </div>
+        </div>
+        <div class="profile_photo">
+          <img src="./image/D.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

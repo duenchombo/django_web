@@ -1,0 +1,29 @@
+{%extends "global_redesigned.html"%} {% block content %}
+
+<div class="container_result">
+  <div class="header_test">
+    {% if index_max_output == 0 %} this maize leaf is healthy and its probality
+    is {{ proba_round }} {% else %} this maize leaf is affected by {{ out }} and
+    its probality is {{ proba_round }} {% endif %}
+  </div>
+  <img class="centered-image" src={{ file_url }} "alt" ="Centered Image" /> .
+  <div class="home_page" style="width: 100%; margin-top: 20px">
+    <a href="/">
+      <button
+        style="
+          width: 35%;
+          font-size: 40px;
+          border-radius: 8px;
+          background: #9bc400;
+          color: #d9d9d9;
+          text-transform: uppercase;
+          text-decoration: none;
+        "
+      >
+        home
+      </button></a
+    >
+  </div>
+</div>
+
+{% endblock %}

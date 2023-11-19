@@ -1,0 +1,16 @@
+{%extends "global.html"%} {% block content %}
+
+<div class="main_content_section">
+  <div class="main_content">
+    <form method="post" enctype="multipart/form-data" action="image_predict">
+      {% csrf_token %}
+      <p>Upload your image:</p>
+      <div class="main">
+        <input type="file" name="img_path" /><br />
+        <input type="submit" value="Upload" name="img_path" />
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

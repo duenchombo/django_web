@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    .body_container {
+      /* border: 2px red solid; */
+      margin: 5px 5px;
+      height: 700px;
+      border-radius: 10px;
+      /* background: #e1e8f0; */
+      /* background: #393f4d; */
+      background: #788b96;
+    }
+    .header_wrapper {
+      border: 2px black solid;
+      bottom: 75%;
+      height: 100px;
+      border-radius: 10px;
+      background-color: #9bc400;
+    }
+    header {
+      /* align-items: center; */
+      text-align: center;
+    }
+    header h1 {
+      font-size: 50px;
+      padding: 8px;
+      color: #d9d9d9;
+    }
+    .main_content_section {
+      position: relative;
+    }
+    .main_content {
+      position: absolute;
+      top: 200px;
+      left: 600px;
+      transform: translate(-50%, -50%);
+    }
+    form {
+      display: flex;
+    }
+    form p {
+      text-transform: uppercase;
+      font-size: 20px;
+
+      color: #d9d9d9;
+    }
+    .final_section {
+      position: absolute;
+      bottom: 5%;
+      left: 45%;
+    }
+
+    input[type="submit"] {
+      padding: 12px 20px;
+      font-size: 20px;
+      background-color: #9bc400;
+      width: 350px;
+      color: #d9d9d9;
+    }
+    input[type="file"] {
+      margin: 10px;
+      width: 350px;
+      max-width: 100%;
+      color: #444;
+      padding: 5px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #555;
+    }
+    input[type="file"]::file-selector-button {
+      margin-right: 20px;
+      border: none;
+      background: #9bc400;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s ease-in-out;
+    }
+    /* for result/test */
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      /* border: 1px solid #ccc; */
+      padding: 20px;
+    }
+
+    /* CSS for the header */
+    .header_test {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* CSS for the image */
+    .centered-image {
+      width: 350px;
+      height: 350px;
+    }
+  </style>
+  <body>
+    <div class="body_container">
+      <div class="header_wrapper">
+        <header>
+          <h1>maize disease identification system</h1>
+        </header>
+      </div>
+      {% block content %} {%endblock%}
+
+      <div class="final_section">
+        <div class="final_word">
+          <p>designed by duen chombo</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

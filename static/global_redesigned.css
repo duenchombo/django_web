@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  .container {
+    background-color: aqua;  
+    height: 720px;
+    width: 100%;
+    background-position: center;
+
+    padding: 25px;
+    /* background-size: contain; */
+    /* background: url("{% static './static/images/Maisveldi.jpg' %}"); */
+    background: url(/static/images/Maisveldi.jpg);
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* top: 0px; */
+    border: 5px green solid;
+    padding: 10px;
+    border-radius: 25px;
+  }
+
+  .header h1 {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: rgb(31, 50, 50);
+  }
+   /* styling the final section */
+   .final_section {
+    bottom: 20px;
+    position: absolute;
+    left: 43%;
+  }
+  .final_section p {
+    color: #d9d9d9;
+  }
+
+/* styling for form */
+.main_content {
+  width: 500px;
+  height: 350px;
+  /* background: linear-gradient(yellow, green, rgb(191, 137, 37)); */
+  background: transparent;
+  position: relative;
+
+  transform: translate(95%, 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(4.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.pure {
+  display: inline-flex;
+}
+.pure p {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.input_sect {
+  display: block;
+  border: 3px black dashed;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  height: 50%;
+}
+.main {
+  margin-left: 5px;
+}
+input[type="file"]::file-selector-button {
+  background-color: rgb(237, 166, 35);
+  height: 50px;
+  width: 50%;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.main button {
+  width: 50%;
+  height: 50px;
+  position: relative;
+  left: 25%;
+  /* border-radius: 25px; */
+  background: linear-gradient(yellow, green, rgb(191, 137, 37));
+  font-size: 25px;
+}
+
+ /* for result/test */
+ .container_result {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* border: 1px solid #ccc; */
+  padding: 20px;
+}
+
+/* CSS for the header */
+.header_test {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* CSS for the image */
+.centered-image {
+  width: 350px;
+  height: 350px;
+}
