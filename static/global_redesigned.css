@@ -4,16 +4,26 @@
     box-sizing: border-box;
     font-family: sans-serif;
   }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }  /* Fully visible */
+    50% { opacity: 0; }       /* Fully hidden */
+  }
   .container {
     background-color: aqua;  
     height: 720px;
     width: 100%;
     background-position: center;
+    
 
     padding: 25px;
     /* background-size: contain; */
     /* background: url("{% static './static/images/Maisveldi.jpg' %}"); */
     background: url(/static/images/Maisveldi.jpg);
+
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   .header {
     display: flex;
@@ -23,6 +33,7 @@
     border: 5px green solid;
     padding: 10px;
     border-radius: 25px;
+
   }
 
   .header h1 {
@@ -33,9 +44,12 @@
   }
    /* styling the final section */
    .final_section {
-    bottom: 20px;
-    position: absolute;
-    left: 43%;
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
   }
   .final_section p {
     color: #d9d9d9;
@@ -99,20 +113,38 @@ input[type="file"]::file-selector-button {
 
  /* for result/test */
  .container_result {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: center; */
   /* border: 1px solid #ccc; */
+  /* padding: 20px; */
+
+  margin-top: 5px; /* Ensures content does not overlap */
+  text-align: center;
   padding: 20px;
 }
 
 /* CSS for the header */
 .header_test {
-  font-size: 24px;
+  /* font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
+  
+    margin-top: 20px; /* Adjust this value as needed */
+    text-align: center;
+    color:red;
+    font-size: 25px;
+    font-weight: bold;
+    /* background-color: #f8f8f8; Light background to separate it visually */
+    padding: 15px; /* Adds space around the text */
+    border-radius: 5px;
+
+    
+    display: block; /* Ensures smooth animation */
+    /* animation: flicker 0.8s infinite alternate ease-in-out; More natural blinking */
+    animation: blink 0.5s infinite alternate;
 }
 
 /* CSS for the image */

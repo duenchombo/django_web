@@ -1,0 +1,4 @@
+media
+maize_app/__pycache__/
+maize_disease_prediction_project/__pycache__/
+maize_app/migrations/__pycache__/

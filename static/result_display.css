@@ -1,4 +1,11 @@
  /* for result/test */
+ @keyframes flicker {
+  0% { opacity: 1; }
+  25% { opacity: 0.3; }
+  50% { opacity: 0; }
+  75% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
  .container {
     position: absolute;
     top: 50%;
@@ -11,9 +18,16 @@
 
   /* CSS for the header */
   .header_test {
+    /* font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; */
+
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 20px;
+    color: red; /* Alert color */
+    text-align: center;
+    display: block; /* Ensures smooth animation */
+    animation: flicker 0.8s infinite alternate ease-in-out; /* More natural blinking */
   }
 
   /* CSS for the image */
